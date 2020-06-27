@@ -1,5 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+
 * {
+    /* margin: 0; */
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    margin: 0;
-    padding: 0;    
+    font-family: 'Roboto', sans-serif;
+    
+  }
+
+  body {
+      margin: 0;
+  }
+
+.nav-header {
+  
+    min-height: 100%;
+    height: 55px;
+    background-color: #7530c5;
+   
+}  
+
+a {
+    text-decoration: none;
+}
+
+
+
+.btn-global {
+    padding: 10px 15px;
+    width: 350px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+  
+    background-color: #6f3dc0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 25px 0 20px;
+    cursor: pointer;
+    transition: filter 0.3s linear;
+  }
+  
+  .btn-global:hover {
+    filter: brightness(90%);
+  }
+
+
+
+
+#content {
+    min-width: 100%;
+    display: flex;
+    height: calc(100vh - 55px);
+    padding: 0 250px;
+    
+
+   
+}
+
+.side-svg {
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.side-svg > img {
+    width: 550px;
+}
+
+.side-form {
+    
+    width: 50%;
+    display: flex;
+
+}
+
+.side-form > form {
+   
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input {
+    margin: 10px 0;
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #b9b9b9;
+    color: #535353;
+    width: 300px;
+    height: 45px;
+    font-size: 15px;
+}
+
+.form-input:focus {
+    background-color: #f0f0f0;
+    transition: 0.3s;
+  }
+
+
+  .form-input:-webkit-autofill, .form-input:focus:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 100px #ffffff inset;
+  
+  }
+  
+
+  .form-select {
+    margin: 5px 0;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #b9b9b9;
+    color: #535353;
+    width: 300px;
+    height: 45px;
+    font-size: 15px;
+  }
+
+  .form-select:focus {
+    background-color: #ebebeb;
+    transition: 0.3s;
+  }
+
+
+@media (max-width: 1200px) 
+{
+    #content{
+        flex-direction: column;
+    }
+
+    .side-form, .side-svg {
+        width: 100%;
+    }
 }

@@ -31,7 +31,7 @@ a {
 
 .btn-global {
     padding: 10px 15px;
-    width: 350px;
+    width: 320px;
     height: 45px;
     border-radius: 8px;
     border: none;
@@ -42,11 +42,12 @@ a {
     font-size: 14px;
     margin: 25px 0 20px;
     cursor: pointer;
-    transition: filter 0.3s linear;
+    transition: all 0.25s linear;
   }
   
   .btn-global:hover {
     filter: brightness(90%);
+    transform: scale(1.03);
   }
 
 
@@ -55,19 +56,32 @@ a {
 #content {
     min-width: 100%;
     display: flex;
-    height: calc(100vh - 55px);
-    padding: 0 250px;
-    
-
-   
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+  
+    min-height: 830px;
 }
 
+.main-content {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  width: 100%;
+
+
+
+}
+
+
+
 .side-svg {
-    width: 50%;
     
+    width: 600px;
     display: flex;
     justify-content: center;
-    
+
 }
 
 
@@ -76,71 +90,36 @@ a {
     width: 550px;
 }
 
-.side-form {
-    
-    width: 50%;
-    display: flex;
-
-}
-
-.side-form > form {
-   
-    width: 700px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.form-input {
-    margin: 10px 0;
-    border-radius: 8px;
-    padding: 10px 15px;
-    border: 1px solid #b9b9b9;
-    color: #535353;
-    width: 300px;
-    height: 45px;
-    font-size: 15px;
-}
-
-.form-input:focus {
-    background-color: #f0f0f0;
-    transition: 0.3s;
-  }
 
 
-  .form-input:-webkit-autofill, .form-input:focus:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 100px #ffffff inset;
-  
-  }
-  
-
-  .form-select {
-    margin: 5px 0;
-    border-radius: 8px;
-    padding: 10px 15px;
-    background-color: #f0f0f0;
-    border: 1px solid #b9b9b9;
-    color: #535353;
-    width: 300px;
-    height: 45px;
-    font-size: 15px;
-  }
-
-  .form-select:focus {
-    background-color: #ebebeb;
-    transition: 0.3s;
-  }
-
-
-@media (max-width: 1200px) 
+@media (max-width: 1300px) 
 {
-    #content{
-        flex-direction: column;
+
+    .side-svg  {
+        position: absolute;
+        left: calc(50% - 300px);
+        z-index: -1;
+        
+       
+
     }
 
-    .side-form, .side-svg {
-        width: 100%;
+
+}
+
+
+@media (max-width: 730px) 
+{
+
+    .side-svg {
+      left: 0;
+      width: 100%;
+     
     }
+
+    .side-svg > img {
+       display: none;
+    }
+    
+   
 }

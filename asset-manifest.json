@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/VizirTest/static/css/main.b169f129.chunk.css",
+    "main.js": "/VizirTest/static/js/main.7247427d.chunk.js",
+    "main.js.map": "/VizirTest/static/js/main.7247427d.chunk.js.map",
+    "runtime-main.js": "/VizirTest/static/js/runtime-main.e6fdbfff.js",
+    "runtime-main.js.map": "/VizirTest/static/js/runtime-main.e6fdbfff.js.map",
+    "static/js/2.4bfb326b.chunk.js": "/VizirTest/static/js/2.4bfb326b.chunk.js",
+    "static/js/2.4bfb326b.chunk.js.map": "/VizirTest/static/js/2.4bfb326b.chunk.js.map",
+    "index.html": "/VizirTest/index.html",
+    "precache-manifest.8eed3368eeef0f712b6dac444f303ae6.js": "/VizirTest/precache-manifest.8eed3368eeef0f712b6dac444f303ae6.js",
+    "service-worker.js": "/VizirTest/service-worker.js",
+    "static/css/main.b169f129.chunk.css.map": "/VizirTest/static/css/main.b169f129.chunk.css.map",
+    "static/js/2.4bfb326b.chunk.js.LICENSE.txt": "/VizirTest/static/js/2.4bfb326b.chunk.js.LICENSE.txt",
+    "static/media/undraw_mobile_pay_9abj.svg": "/VizirTest/static/media/undraw_mobile_pay_9abj.d8ae7480.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6fdbfff.js",
+    "static/js/2.4bfb326b.chunk.js",
+    "static/css/main.b169f129.chunk.css",
+    "static/js/main.7247427d.chunk.js"
+  ]
+}

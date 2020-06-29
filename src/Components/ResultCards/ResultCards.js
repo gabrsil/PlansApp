@@ -14,7 +14,11 @@ function ResultCards ({priceWithoutPlan, priceWPlan}) {
                 <h1>Sem o Plano</h1>
                 <section className="result-info-txt">
             
-                  <h1>{priceWithoutPlan ? Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(priceWithoutPlan) : '...'}</h1>
+                  <h1>{
+                     priceWithoutPlan === 0 ? Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(0) :  
+                   priceWithoutPlan ? Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(priceWithoutPlan)  : '...'
+                  }
+                </h1>
                     
                   
 
@@ -24,7 +28,11 @@ function ResultCards ({priceWithoutPlan, priceWPlan}) {
               <article className="result-card">
               <h1>Com o Plano</h1>
                 <section className="result-info-txt">
-                <h1>{priceWPlan ? Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(priceWPlan) : '...'}</h1>
+                <h1>
+                  { priceWPlan === 0 ? Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(0) :  
+                   priceWPlan ? Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(priceWPlan)  : '...'}
+                
+                </h1>
                 </section>
                 </article>
 

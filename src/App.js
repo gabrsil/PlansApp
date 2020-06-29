@@ -12,7 +12,6 @@ const places = [
 ]
 
 
-
 const plans = [
   "FaleMais 30",
   "FaleMais 60",
@@ -38,7 +37,7 @@ function App() {
 
 
 
-  function handleChangeOrigin(origin){
+ function handleChangeOrigin(origin){
     setCurrentOrigin(origin);
   }
 
@@ -46,19 +45,19 @@ function App() {
     setCurrentDest(dest);
   }
 
-  function handleChangePlan(plan){
+ function handleChangePlan(plan){
     setCurrentPlan(plan);
   }
 
-  function handleChangeDuration(dur){
+ function handleChangeDuration(dur){
     setDuration(dur);
   }
 
 
 
 
-  function calculateNoPlan(e) {
-    e.preventDefault();
+ function calculateNoPlan(e) {
+    e.preventDefault();const REACT_VERSION = React.version;
 
     const price = getPrice();
 
@@ -68,7 +67,7 @@ function App() {
 
 
 
-  function getPrice(){
+   function getPrice(){
   
     if(currentOrigin === 0){
      return places[0].prices[currentDest];
@@ -78,7 +77,7 @@ function App() {
   
   }
   
-  function calculatePlan(e) {
+   function calculatePlan(e) {
     e.preventDefault();
 
     const tax = getPrice();
@@ -122,7 +121,7 @@ function App() {
   return (
 
     <>
-     
+
       <main id="content">
           <div className="main-content">
          <section className="side-svg">

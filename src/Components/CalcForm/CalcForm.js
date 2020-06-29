@@ -9,7 +9,7 @@ function CalcForm({calculateNoPlan, calculatePlan, handleChangeOrigin, handleCha
             calculatePlan(e);
           }}>
              
-          <select placeholder="Origem" required onChange={e => handleChangeOrigin(e.target.selectedIndex)}
+          <select placeholder="Origem" name="origin" required onChange={e => handleChangeOrigin(e.target.selectedIndex)}
              className="form-select">
                 
              {
@@ -25,7 +25,7 @@ function CalcForm({calculateNoPlan, calculatePlan, handleChangeOrigin, handleCha
              <option value="" disabled selected hidden>Origem</option>
            </select>
            
-           <select placeholder="Destino" required onChange={e => handleChangeDest(e.target.selectedIndex)} className="form-select">
+           <select placeholder="Destino" name="destination" required onChange={e => handleChangeDest(e.target.selectedIndex)} className="form-select">
               
              {
                places[currentOrigin].destinations.map((dest) => (
@@ -36,7 +36,7 @@ function CalcForm({calculateNoPlan, calculatePlan, handleChangeOrigin, handleCha
              <option value="" disabled selected hidden>Destino</option>
            </select>
      
-           <select  placeholder="Plano" required onChange={e => handleChangePlan(e.target.selectedIndex)} className="form-select">
+           <select  placeholder="Plano" name="plan" required onChange={e => handleChangePlan(e.target.selectedIndex)} className="form-select">
            
              {
                plans.map((plan) => (
@@ -49,7 +49,7 @@ function CalcForm({calculateNoPlan, calculatePlan, handleChangeOrigin, handleCha
 
             <input 
             type="number" 
-            placeholder="Tempo de duração" 
+            placeholder="Minutos" 
             value={duration}
             onChange={e => handleChangeDuration(e.target.value)}
             required

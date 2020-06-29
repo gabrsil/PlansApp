@@ -20,9 +20,9 @@ Com Cypress, rode a aplicação com o comando mostrado acima "npm run start" e d
 ## Imagens da Aplicação
 
 ![app](https://i.imgur.com/d1zTpaM.png)
-
+----
 ![app2](https://i.imgur.com/SI1vqa2.png)
-
+----
 ![app3](https://i.imgur.com/Qs8xcNt.png)
-
+----
 ![app4](https://i.imgur.com/w5oul2i.png)

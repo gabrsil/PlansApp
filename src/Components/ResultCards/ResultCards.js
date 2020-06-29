@@ -4,7 +4,7 @@ import './resultcards.css'
 
 function ResultCards ({priceWithoutPlan, priceWPlan}) {
 
-    console.log(priceWPlan)
+
 
     return (
             <section className="result-info">

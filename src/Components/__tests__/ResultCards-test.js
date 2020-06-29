@@ -14,7 +14,7 @@ describe('<ResultCards />', () => {
       
       // eslint-disable-next-line react/react-in-jsx-scope
       const wrapper = mount(<ResultCards priceWithoutPlan ={priceWithoutPlan} priceWPlan = {priceWPlan} />);
-      console.log(wrapper)
+
       expect(wrapper
         .find('.result-info-txt')
         .find('h1')
@@ -32,7 +32,7 @@ describe('<ResultCards />', () => {
         
         // eslint-disable-next-line react/react-in-jsx-scope
         const wrapper = mount(<ResultCards priceWithoutPlan ={priceWithoutPlan} priceWPlan = {priceWPlan} />);
-        console.log(wrapper)
+     
         expect(wrapper
             .find('.result-info-txt')
             .find('h1')

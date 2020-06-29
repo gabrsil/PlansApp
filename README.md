@@ -1,68 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sobre o projeto
 
-## Available Scripts
+Projeto criado totalmente com o Framework ReactJS com as tecnologias auxiliares Html5 e Css3. Foram utilizados para testar a aplicação o framework Jest para unitários e o Cypress.io. 
 
-In the project directory, you can run:
+## Como executar
 
-### `yarn start`
+Para dar o setup na aplicação é requerido o NodeJs (https://nodejs.org/en/). Com o NodeJS instalado, entre na pasta da aplicação e rode o comando "npm install" para instalar todas as dependências da mesma. Para executar a aplicação rode o comando "npm run start". Após alguns segundos a mesma será iniciada. acesse pela Url "localhost:3000".
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Testes
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Para executar os testes, com o Jest basta executar o comando "npm run test". Irá exibir no console os resultados, algo como isso:
 
-### `yarn test`
+![test](https://i.imgur.com/BOq8sf1.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+Com Cypress, rode a aplicação com o comando mostrado acima "npm run start" e depois execute o cypress com o comando "npx cypress open", irá abrir uma aplicação externa onde mostrará os testes criados. Escolha o único da lista. Ele abrirá uma aba externa do Chroumium e executará os testes automaticamente. deverá se parecer com isso:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![cypress](https://i.imgur.com/h8nzYUV.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Imagens da Aplicação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![app](https://i.imgur.com/d1zTpaM.png)
 
-### `yarn eject`
+![app2](https://i.imgur.com/SI1vqa2.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![app3](https://i.imgur.com/Qs8xcNt.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![app4](https://i.imgur.com/w5oul2i.png)
